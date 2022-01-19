@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:wght@100&family=Bellefair&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  color: #fff;
+}
+.home-body{
+  background: #0b2945 url(./assets/home/background-home-desktop.jpg) no-repeat center center/cover;
+}
+/* p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1.3vw;
+  line-height: 1.75;
+} */
+a,a:link {
+  text-decoration: none;
+  color: inherit;
+}
+hr {
+  border: none;
+  border-top: 0.01vh solid hsla(0, 0%, 100%, 0.459);
+}
+.header-home {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo-svg {
+  width: 3.34vw;
+  height: 3.34vw;
+}
+.header-home hr {
+  width: 28vw;
+  z-index: 5;
+  transform: translateX(60px);
+}
+.menu-button {
+  display: none;
+}
+nav ul.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60vw;
+  background: #0b2945;
+  background-color: hsla(0, 0%, 100%, 0.04);
+  backdrop-filter: blur(10px);
+  padding-right: 50px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  font-size: 1.1vw;
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5;
+  display: inline-block;
+  margin-top: 2.6vw;
+  padding-bottom: 2.4vw;
+  letter-spacing: 2.7px;
+  border-bottom: 0.21vw solid rgba(0, 0, 0, 0);
+}
+.nav-list .visited-link,
+.nav-list .visited-link:hover,
+.tablist .nav-text:hover {
+  border-bottom-color: #fff;
+  transition: border-bottom-color 400ms ease-in-out;
+}
+.number {
+  font-weight: 900;
+  margin-right: 0.5vw;
+}
+/* end header */
+.section-home {
+  display: flex;
+  margin-top: 30vh;
+  padding-bottom: 20vh;
+  width: 70%;
+  margin-left: 12vw;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.text-container {
+  width: 31vw;
+}
+.heading {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  line-height: 1.2;
+  letter-spacing: 4.72px;
+  font-weight: 500;
+}
+.large-text {
+  font-family: "Bellefair", sans-serif;
+  font-size: 8.5vw;
+  color: #fff;
+  line-height: 1.5;
+  padding: 1.8vw 0;
+}
+.text-container p {
+  font-size: 1.2vw;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  line-height: 1.4;
+  padding: 0 4.5vw 0 0;
+}
+a.explore-btn {
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vw;
+  margin-right: -7vw;
+  display: flex;
+  color: #0b2945;
+  font-size: 2.5vw;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  transition: box-shadow 0.4s ease-in-out;
+}
+a.explore-btn:hover {
+  box-shadow: 0 0 0 5vw rgba(255, 255, 255, 0.1);
+}
+/* end index page */
+@media(max-width: 35rem){
+    .header-home{
+        margin-top: 2rem;
+        justify-content: space-around;
+    }
+    .logo-svg{
+        width: 10vw;
+        height: 10vw;
+        transform: translateX(0);
+    }
+    hr{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+        position: relative;
+        z-index: 5;
+    }
+    nav ul.nav-list{
+        position:absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        padding-left: 10vw;
+        flex-direction: column;  /* cho thanh cot*/
+        padding-bottom: 8rem;
+        transform: scale(0);
+        transition: transform 0.1s ease-in-out;
+    }
+    .nav-list a{
+        font-size: 16px;
+    }
+}
+.destination-body{
+  background: #0e141e url(./assets/crew/background-crew-desktop.jpg) no-repeat center center/cover;
+}
+.container01{
+  width: 1024px;
+  margin: auto;
+  padding-top: 50px;
+}
+.ct{
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed',sans-serif;
+  letter-spacing: 0.5vw;
+}
+.sp{
+  color: gray;
+  opacity: 0.5;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+.blog{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+/* .blog-img img{
+  width: 75%;
+  height: 75%
+} */
+.blog-text{
+  margin-left: 10rem;
+}
+.nav-body-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30vw;
+  margin-bottom: 1.5rem;
+}
+.nav-body-list li{
+  list-style: none;
+}
+.nav-body-list li a{
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed',sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 0.21vw solid rgba(0, 0, 0, 0);
+}
+.nav-body-list li a:hover{
+  border-bottom-color: #fff;
+  transition: border-bottom-color 400ms ease-in-out;
+}
+.blog-text h2{
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  font-size: 5rem;
+  font-family: 'Bellefair',sans-serif;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+.blog-text p.para{
+  margin-bottom: 2rem;
+  font-size: 19px;
+}
+.blog-text hr{
+  margin-bottom: 1rem;
+}
+.blog-text .properties{
+  display: flex;
+  align-items: center;
+}
+.properties-l{
+  margin-right: 4vw;
+}
+.properties p{
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed',sans-serif;
+  font-size: 15px;
+}
+.properties h5{
+  text-transform: uppercase;
+  font-family: 'Bellefair',sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+}
+/* end destination */
+.body-crew{
+  background: #0e141e url(./assets/crew/background-crew-desktop.jpg) no-repeat center center/cover;
+}
+.blog-crew{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.blog-crew .blog-crew-left h3{
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 1.5rem;
+  font-size: 25px;
+}
+.blog-crew .blog-crew-left h2{
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-family: 'Bellefair',sans-serif;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+.blog-crew .blog-crew-left p{
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed',sans-serif;
+  font-size: 15px;
+}
+.blog-crew-left .btn-crew button{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 0.5;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+/* .blog-crew-right{
+  padding-left: 50px;
+}  */

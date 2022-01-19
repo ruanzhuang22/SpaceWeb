@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style2.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="body-technology">
+  <header class="header-home ">
+    <a href="" class="logo">
+      <img src="./assets/shared/logo.svg" alt="" class="logo-svg">
+    </a>
+    <hr class="hr-header">
+    <nav>
+      <div href="" class="menu-button" >
+        <img src="./assets/shared/icon-hamburger.svg" alt="" id="menu-logo">
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html" class="visited-link"><span class="number">00</span>Home</a></li>
+        <li><a href="destination-titan.html" class=><span class="number">01</span>Destination</a></li>
+        <li><a href="crew-specialist.html" class=><span class="number">02</span>Crew</a></li>
+        <li><a href="technology-vehicle.html" class=><span class="number">03</span>Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+ <!-- end header -->
+  <section class="container01">
+    <h1 class="ct"><span class="sp">03</span> space launch 101</h1>
+    <div class="blog blogng">
+      <div class="btn-tech">
+        <button class="btnn visited-link" id="btn01-tab" aria-controls="btn01" aria-selected="true" role="tab">1</button>
+        <button class="btnn" id="btn02-tab" aria-controls="btn02" aria-selected="true" role="tab">2</button>
+        <button class="btnn" id="btn03-tab" aria-controls="btn03" aria-selected="true" role="tab">3</button>
+      </div>
+      <div class="blog-text-tech">
+        <div class="text-tech tabpanel" id="launch-vehicle" role="tabpanel" aria-labelledby="btn01-tab">
+          <h5 class="terminology">the techminology...</h5>
+          <h2>Launch vehicle</h2>
+          <p class="para"> A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+          payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+          WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+          it's quite an awe-inspiring sight on the launch pad!</p>
+        </div>
+        <div class="text-tech tabpanel" id="space-capsule" role="tabpanel" aria-labelledby="btn02-tab" hidden>
+          <h5 class="terminology">the techminology...</h5>
+          <h2>Space capsule</h2>
+          <p class="para"> A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+            capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+            you'll spend your time during the flight. It includes a space gym, cinema, 
+            and plenty of other activities to keep you entertained.</p>
+        </div>
+        <div class="text-tech tabpanel" id="spaceport" role="tabpanel" aria-labelledby="btn03-tab" hidden>
+          <h5 class="terminology">the techminology...</h5>
+          <h2>Spaceport</h2>
+          <p class="para"> A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+            by analogy to the seaport for ships or airport for aircraft. Based in the 
+            famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+            of the Earth’s rotation for launch.</p>
+        </div>
+      </div>
+      <picture id="picture">
+        <source class="technology-picture-landscape" id="firstSrc" media="(max-width:768px)" srcset="./assets/technology/image-launch-vehicle-landscape.jpg">
+        <source  id="secondSrc" media="(min-width:769px)" srcset="./assets/technology/image-launch-vehicle-portrait.jpg">
+        <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="" class="technology-picture" id="technology-img">
+      </picture>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
